@@ -6,6 +6,11 @@
     --dark: #000000;
 }
 
+#logo{
+    position: relative;
+    width: 220px;
+    height: 120px;
+}
 .back-to-top {
     position: fixed;
     display: none;
@@ -13,6 +18,7 @@
     bottom: 45px;
     z-index: 99;
 }
+
 
 
 /*** Spinner ***/
