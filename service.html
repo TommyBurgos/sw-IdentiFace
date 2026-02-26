@@ -42,143 +42,151 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-gray navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="mb-0 text-primary text-uppercase"><i class="fa fa-cut me-3"></i>HairCut</h1>
+            <img class="mb-0" id="logo" src="img/logoIF-blanco.png" alt="IdentiFace">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link active">Service</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="team.html" class="dropdown-item">Our Barber</a>
-                        <a href="open.html" class="dropdown-item">Working Hours</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="#como-funciona" class="nav-item nav-link active">Cómo funciona</a>
+                <a href="#caracteristicas" class="nav-item nav-link">Características</a>
+                <a href="#planes" class="nav-item nav-link">Planes</a>
+                <a href="#contacto" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="https://web-production-6cd6c.up.railway.app/accounts/login/" 
+            class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">
+            Iniciar sesión <i class="fa fa-arrow-right ms-3"></i>
+            </a>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <!-- CTA Start -->
+    <div class="container-fluid bg-dark text-light py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white text-uppercase mb-3 animated slideInDown">Service</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center text-uppercase mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Service</li>
-                </ol>
-            </nav>
+            <h1 class="text-uppercase mb-4">¿Listo para modernizar el control de asistencia en tu empresa?</h1>
+            <p class="mb-4 fs-5">
+                Automatiza entradas, salidas y cálculo de atrasos con tecnología de reconocimiento facial.
+                Implementación rápida, escalable y segura.
+            </p>
+
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#contacto" class="btn btn-primary py-3 px-5">
+                    Solicitar demostración
+                </a>
+
+                <a href="https://web-production-6cd6c.up.railway.app/accounts/login/" class="btn btn-outline-light py-3 px-5">
+                    Iniciar sesión
+                </a>
+            </div>
         </div>
     </div>
-    <!-- Page Header End -->
+    <!-- CTA End -->
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="como-funciona">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Services</p>
-                <h1 class="text-uppercase">What We Provide</h1>
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Cómo Funciona</p>
+                <h1 class="text-uppercase">Un proceso simple, automatizado e inteligente</h1>
             </div>
+
             <div class="row g-4">
+
+                <!-- Paso 1 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
                         <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
                             <img class="img-fluid" src="img/haircut.png" alt="">
                         </div>
                         <div class="ps-4">
-                            <h3 class="text-uppercase mb-3">Haircut</h3>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                            <span class="text-uppercase text-primary">From $15</span>
+                            <h3 class="text-uppercase mb-3">1. Registro del Empleado</h3>
+                            <p>El administrador crea el empleado en el sistema y realiza el enrolamiento facial desde la cámara.</p>
+                            <span class="text-uppercase text-primary">Captura inicial</span>
                         </div>
-                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
                     </div>
                 </div>
+
+                <!-- Paso 2 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
                         <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
                             <img class="img-fluid" src="img/beard-trim.png" alt="">
                         </div>
                         <div class="ps-4">
-                            <h3 class="text-uppercase mb-3">Beard Trim</h3>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                            <span class="text-uppercase text-primary">From $15</span>
+                            <h3 class="text-uppercase mb-3">2. Activación del Dispositivo</h3>
+                            <p>Se configura la tablet tipo kiosko ingresando un código único asociado a la empresa.</p>
+                            <span class="text-uppercase text-primary">Dispositivo seguro</span>
                         </div>
-                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
                     </div>
                 </div>
+
+                <!-- Paso 3 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
                         <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
                             <img class="img-fluid" src="img/mans-shave.png" alt="">
                         </div>
                         <div class="ps-4">
-                            <h3 class="text-uppercase mb-3">Mans Shave</h3>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                            <span class="text-uppercase text-primary">From $15</span>
+                            <h3 class="text-uppercase mb-3">3. Reconocimiento Facial</h3>
+                            <p>El sistema captura el rostro, genera un embedding y lo compara en milisegundos con la base de datos.</p>
+                            <span class="text-uppercase text-primary">IA en tiempo real</span>
                         </div>
-                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
                     </div>
                 </div>
+
+                <!-- Paso 4 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
                         <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
                             <img class="img-fluid" src="img/hair-dyeing.png" alt="">
                         </div>
                         <div class="ps-4">
-                            <h3 class="text-uppercase mb-3">Hair Dyeing</h3>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                            <span class="text-uppercase text-primary">From $15</span>
+                            <h3 class="text-uppercase mb-3">4. Registro Automático</h3>
+                            <p>Se determina automáticamente si es entrada o salida y se valida si está puntual o con atraso.</p>
+                            <span class="text-uppercase text-primary">Sin intervención manual</span>
                         </div>
-                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
                     </div>
                 </div>
+
+                <!-- Paso 5 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
                         <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
                             <img class="img-fluid" src="img/mustache.png" alt="">
                         </div>
                         <div class="ps-4">
-                            <h3 class="text-uppercase mb-3">Mustache</h3>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                            <span class="text-uppercase text-primary">From $15</span>
+                            <h3 class="text-uppercase mb-3">5. Control de Políticas</h3>
+                            <p>El sistema aplica horarios configurables por empresa y calcula automáticamente minutos de atraso.</p>
+                            <span class="text-uppercase text-primary">Gestión inteligente</span>
                         </div>
-                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
                     </div>
                 </div>
+
+                <!-- Paso 6 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
                         <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
                             <img class="img-fluid" src="img/stacking.png" alt="">
                         </div>
                         <div class="ps-4">
-                            <h3 class="text-uppercase mb-3">Stacking</h3>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
-                            <span class="text-uppercase text-primary">From $15</span>
+                            <h3 class="text-uppercase mb-3">6. Dashboard y Reportes</h3>
+                            <p>Visualiza métricas en tiempo real y exporta reportes en Excel o CSV para nómina y auditoría.</p>
+                            <span class="text-uppercase text-primary">Información en segundos</span>
                         </div>
-                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- Service End -->
-
+    <!-- Service End -->    
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
