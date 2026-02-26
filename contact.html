@@ -222,12 +222,16 @@ document.getElementById("demoForm").addEventListener("submit", async function(e)
 
     const formMessage = document.getElementById("formMessage");
 
+    const employeesValue = document.getElementById("employees").value;
+
     const data = {
         name: document.getElementById("name").value.trim(),
         company: document.getElementById("company").value.trim(),
         email: document.getElementById("email").value.trim(),
         phone: document.getElementById("phone").value.trim(),
-        employees: document.getElementById("employees").value || null,
+        employees: employeesValue !== "" 
+            ? parseInt(employeesValue) 
+            : null,
         message: document.getElementById("message").value.trim()
     };
 
